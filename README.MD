@@ -218,11 +218,19 @@ sys.path.insert(0,os,path.join(BASE_DIR,'apps'))
 
 7. 反向解析，得到每篇文章的绝对路径
 
-## 七、评论和集成markdownfy插件
+## 七、评论和集成markdownfx插件
 django-contrib-comments
 django-markdownfy
 
+1. 获取最新文章，获取所有分类，获取所有标签
 
+2. 写分页`python manage.py shell` 进入shell里
+
+   `from django.core.paginator import Paginator`
+
+   `from articles.models import Articles`![image-20210105190250436](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210105190250436.png)
+
+3. 写通过标题，文章内容或者摘要搜索内容
 
 
 
