@@ -232,7 +232,42 @@ django-markdownfy
 
 3. 写通过标题，文章内容或者摘要搜索内容
 
+4. 让增加的内容呈现源代码
+
+5. 安装django-markdownx  `pip install django-markdownx`
+
+6. 收集collectstatic  `python manage.py collectstatic`
+
+7. 在models里引入MarkdownxField `from markdownx.models import MarkdownxField` 
+
+8. 在admin里
+
+   ![image-20210106145533078](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210106145533078.png)
+
+9. 在templates文件夹下创建文件夹markdownx
+
+10. 在markdownx下创建widget.html文件覆盖原有的widget.html
+
+11. 设置优先从自建的templates中渲染模板，并注册django.forms
+
+12. 让解析的内容与原内容成横排显示，在bootcdn.cn里选择twitter-bootstrap
+
+    复制一个link标签
+
+13. 添加样式是页面效果好一些
+
+    ![image-20210106154951413](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210106154951413.png)
+
+14. 将content，abstract 通过markdownfy 解析成html
+
+15. 安装django-contrib-comments `pip install django-contrib-comments`
+
+16. 将`django.contrib.sites`注册到INSTALLED_APPS![image-20210106162015241](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210106162015241.png)![image-20210106162604915](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210106162604915.png)
 
 
-​             
+## 八、项目部署到虚拟机上线
+
+    1. 下载安装finalshell
+    2. 连接finalshell与虚拟机
+    ​         
 
